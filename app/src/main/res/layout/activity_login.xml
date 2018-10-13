@@ -16,23 +16,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/Titulo"
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+        <ImageView
+            android:id="@+id/imageView56"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Parqueo Obrajes"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="70dp"
-            tools:layout_editor_absoluteY="114dp" />
-
+            android:src="@drawable/nombre" />
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="136dp"
-            app:srcCompat="@drawable/logo" />
+            android:layout_height="140dp"
+            android:src="@drawable/cebra1" />
 
         <EditText
             android:id="@+id/tv1"

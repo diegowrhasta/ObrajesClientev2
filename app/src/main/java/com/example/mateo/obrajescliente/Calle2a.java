@@ -388,8 +388,6 @@ public class Calle2a extends AppCompatActivity implements QrDialogo.OnDialogList
                     btnM2.setBackgroundResource(R.drawable.boton_redondo_v);
                 }else if(value.getEstado().equals("Reservado")){
                     btnM2.setBackgroundResource(R.drawable.boton_redondo_a);
-                }else if(value.getEstado().equals("Ocupado")){
-                    btnM2.setBackgroundResource(R.drawable.boton_redondo_r);
                 }
             }
             @Override

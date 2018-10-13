@@ -71,8 +71,13 @@ public class RegistroUser extends AppCompatActivity {
                                 //objeto que indica los datos del usuario
                                 String id = databaseCliente.push().getKey();
                                 UserInformation userInformation = new UserInformation(nombre,apellido,ci,email,0);
+
                                 //se ingresan los datos del usuario en la base
                                 databaseCliente.child(firebaseAuth.getUid()).child("Usuario").setValue(userInformation);
+
+                                databaseCliente.child(firebaseAuth.getUid()).child("Usuario").child("tipo").setValue("UsuarioNormal");
+
+
                             }else{
 
                                 Toast.makeText(RegistroUser.this,"Ya existe una cuenta con ese correo o la contraseña es muy corta",Toast.LENGTH_LONG).show();

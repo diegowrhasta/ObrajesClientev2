@@ -42,7 +42,7 @@ public class Inicio extends Fragment {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 UserInformation value = dataSnapshot.getValue(UserInformation.class);
                 nombre.setText("Bienvenido "+value.getnombre());
-                puntos.setText("Puntuacion:  "+value.getpuntos());
+                puntos.setText("Puntuación:  "+value.getpuntos());
             }
 
             @Override
