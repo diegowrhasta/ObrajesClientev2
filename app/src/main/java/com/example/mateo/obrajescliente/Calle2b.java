@@ -1,5 +1,6 @@
 package com.example.mateo.obrajescliente;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
@@ -110,6 +111,8 @@ public class Calle2b extends AppCompatActivity implements QrDialogo.OnDialogList
                         myRef.child("usuario").setValue(currentFirebaseUser.getUid());
                         myRef.child("estado").setValue("Reservado");
                         Toast.makeText(getApplicationContext(), "Reserva Exitosa", Toast.LENGTH_SHORT).show();
+                        String sector="Sector_B";
+                        startActivity(new Intent(getApplicationContext(), Timer.class));
                         parqueo = "";
 
                     }

@@ -7,7 +7,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Sayt'awiwi"
+        android:label="Sayt&apos;awiwi"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -24,8 +24,12 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RegistroUser" />
         <activity android:name=".Qr" />
-        <activity android:name=".Calle2a"></activity>
-        <activity android:name=".Calle2b"></activity>
+        <activity android:name=".Calle2a" />
+        <activity android:name=".Calle2b" />
+        <activity
+            android:name=".Timer"
+            android:label="@string/title_activity_timer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

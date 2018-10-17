@@ -1,5 +1,6 @@
 package com.example.mateo.obrajescliente;
 
+import android.content.Intent;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.sql.Time;
 import java.util.Calendar;
 
 public class Calle2a extends AppCompatActivity implements QrDialogo.OnDialogListener{
@@ -51,6 +53,7 @@ public class Calle2a extends AppCompatActivity implements QrDialogo.OnDialogList
             fragment.setArguments(bundle);
         }
         fragment.show(getSupportFragmentManager(),QrDialogo.TAG);
+
     }
     public void btnA2(View view){
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -251,7 +254,16 @@ public class Calle2a extends AppCompatActivity implements QrDialogo.OnDialogList
                         myRef.child("placa").setValue("0");
                         myRef.child("usuario").setValue(currentFirebaseUser.getUid());
                         myRef.child("estado").setValue("Reservado");
+
                         Toast.makeText(getApplicationContext(), "Reserva Exitosa", Toast.LENGTH_SHORT).show();
+
+                        String sector="Sector_A";
+                        Intent intent = new Intent(getApplicationContext(),Timer.class);
+                        intent.putExtra("titulo","Calle 2: Espacio "+parqueo);
+                        intent.putExtra("sector",sector);
+                        intent.putExtra("parqueo",parqueo);
+                        startActivity(intent);
+
                         parqueo = "";
 
                     }
