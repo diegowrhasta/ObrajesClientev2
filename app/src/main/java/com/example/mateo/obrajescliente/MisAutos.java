@@ -20,7 +20,6 @@ import com.google.firebase.database.Query;
 
 public class MisAutos extends Fragment{
     FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser() ;
-    FirebaseAuth firebaseAuth;
     ListView lv1;
     FirebaseListAdapter adapter;
     FirebaseDatabase database = FirebaseDatabase.getInstance();

@@ -21,7 +21,6 @@ public class BuscarParqueo extends Fragment {
     private Button btn2a,btn2b;
     private FirebaseAuth firebaseAuth;
     int c=0,c1=0;
-    FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser() ;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

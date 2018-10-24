@@ -1,6 +1,5 @@
 package com.example.mateo.obrajescliente;
 
-import java.util.List;
 
 public class Auto {
 
