@@ -44,14 +44,14 @@ public class QrDialogo extends DialogFragment {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         onDialogListener.OnPositiveButtonClicked();
-                        startActivity(new Intent(getContext(), MisAutos.class));
+                        startActivity(new Intent(getContext(), Bienvenido.class));
                     }
                 })
                 .setNegativeButton("No, Cancelar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         onDialogListener.OnNegativeButtonClicked();
-                        startActivity(new Intent(getContext(), Inicio.class));
+                        startActivity(new Intent(getContext(), Bienvenido.class));
                     }
                 });
         return builder.create();
